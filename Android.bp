@@ -28,7 +28,7 @@ qti_thermal_hal_cc_defaults {
 		netlink: {
 			true: {
 				cflags: ["-DENABLE_THERMAL_NETLINK"],
-				header_libs: ["qti_kernel_headers"],
+				header_libs: ["device_kernel_headers"],
 				shared_libs: ["libnl"],
 				srcs: [
 					"thermalUtilsNetlink.cpp",
@@ -46,7 +46,7 @@ qti_thermal_hal_cc_defaults {
 			},
 			conditions_default: {
 				cflags: ["-DENABLE_THERMAL_NETLINK"],
-				header_libs: ["qti_kernel_headers"],
+				header_libs: ["device_kernel_headers"],
 				shared_libs: ["libnl"],
 				srcs: [
 					"thermalUtilsNetlink.cpp",
