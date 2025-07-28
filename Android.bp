@@ -27,7 +27,7 @@ cc_binary {
 	header_libs: [
 		"liblog_headers",
 		"libcutils_headers",
-		"qti_kernel_headers"
+		"device_kernel_headers"
 	],
 	cflags: [
 		"-Wno-unused-parameter",
@@ -63,7 +63,7 @@ cc_fuzz {
     header_libs: [
         "liblog_headers",
         "libcutils_headers",
-        "qti_kernel_headers"
+        "device_kernel_headers"
     ],
 
     cflags: [
